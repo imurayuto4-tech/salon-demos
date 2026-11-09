@@ -1,0 +1,493 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta name="robots" content="noindex">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ドッグサロン&amp;HOTEL cotton.｜宮崎県都城市のトリミング＆ペットホテル</title>
+<meta name="description" content="ドッグサロン&amp;HOTEL cotton.（コットン）｜宮崎県都城市のトリミング＆ペットホテル。ふんわり可愛く、丁寧に。わんちゃんが安心して過ごせる空間づくりを大切にしています。">
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&family=Noto+Serif+JP:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* Layout: full-screen photo hero, then centered sections alternating two warm grounds, joined by soft waves */
+:root{
+  --bg:#faf8f5;          /* base ground */
+  --bg2:#f0ebe1;         /* alternate ground */
+  --card:#fbfaf7;
+  --ink:#2c2c2c;
+  --ink2:#6b6660;
+  --ink3:#9a948c;
+  --accent:#5f7389;      /* shop colour */
+  --accent-d:#4d5e70;
+  --gold:#d4a857;
+  --gold-d:#c4974a;
+  --line:rgba(44,44,44,.12);
+  --line-s:rgba(44,44,44,.07);
+  --dark:#2c2c2c;
+  --line-green:#06c755;
+  --serif:"Noto Serif JP","Hiragino Mincho ProN","Yu Mincho",serif;
+  --sans:"Noto Sans JP","Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;
+  --ease:cubic-bezier(.22,1,.36,1);
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+html,body{margin:0;padding:0}
+body{overflow-x:clip}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:60}
+img{max-width:100%;display:block}
+a{color:inherit}
+p{margin:0}
+h1,h2,h3{margin:0;font-weight:400}
+.wrap{max-width:1024px;margin:0 auto;padding-left:max(24px,env(safe-area-inset-left,0px));padding-right:max(24px,env(safe-area-inset-right,0px))}
+.wrap.sm{max-width:896px}
+.samp{font-size:11px;color:var(--accent);letter-spacing:.04em}
+.ph{color:var(--ink3)}
+
+/* ---------- header ---------- */
+.hd{position:fixed;top:env(safe-area-inset-top,0px);left:0;right:0;z-index:50;transition:background-color .4s var(--ease),box-shadow .4s var(--ease)}
+.hd .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;height:72px}
+.brand{font-family:var(--serif);font-weight:600;font-size:22px;letter-spacing:.04em;color:#faf8f5;text-decoration:none;white-space:nowrap;transition:color .4s}
+.hd nav{display:flex;align-items:center;gap:26px}
+.hd nav a{font-size:13.5px;letter-spacing:.05em;color:rgba(250,248,245,.9);text-decoration:none;transition:color .3s}
+.hd nav a:hover{color:var(--gold)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--sans);font-size:14px;font-weight:500;letter-spacing:.05em;line-height:20px;padding:12px 24px;border-radius:4px;text-decoration:none;cursor:pointer;border:1px solid transparent;transition:background-color .25s,color .25s,border-color .25s}
+.btn.gold{background:var(--gold);color:var(--ink)}
+.btn.gold:hover{background:var(--gold-d)}
+.btn.brand{background:var(--accent);color:#faf8f5}
+.btn.brand:hover{background:var(--accent-d)}
+.btn.ghost{border-color:rgba(250,248,245,.55);color:#faf8f5}
+.btn.ghost:hover{background:rgba(250,248,245,.12)}
+.btn.sm{padding:10px 22px;font-size:13px}
+.hd.scrolled{background:rgba(250,248,245,.96);box-shadow:0 1px 0 var(--line-s)}
+.hd.scrolled .brand{color:var(--ink)}
+.hd.scrolled nav a{color:var(--ink)}
+.hd.scrolled nav a:hover{color:var(--accent)}
+.hd .wrap{justify-content:flex-start}
+.hd nav{margin-left:auto}
+.hsns{display:flex;align-items:center;gap:14px;margin-left:6px}
+@media(max-width:900px){.hbtn{display:none}}
+.hsns a{display:inline-flex;width:24px;height:24px;color:#faf8f5;transition:color .3s}
+.hsns a:hover{color:var(--gold)}
+.hsns svg{width:100%;height:100%;display:block}
+.hd.scrolled .hsns a,.hd.open .hsns a{color:var(--ink)}
+.hd.scrolled .hsns a:hover{color:var(--accent)}
+@media(max-width:900px){.hsns{display:none}.burger{margin-left:auto}}
+.msns{display:flex;gap:24px;margin-top:4px}
+.msns a{display:inline-flex;width:26px;height:26px;color:var(--ink)}
+.msns svg{width:100%;height:100%;display:block}
+.burger{display:none;width:40px;height:40px;padding:10px 8px;margin-right:-8px;background:none;border:0;cursor:pointer;flex-direction:column;justify-content:space-between}
+.burger span{display:block;height:1px;background:#faf8f5;transition:transform .3s var(--ease),opacity .2s,background .3s}
+.hd.scrolled .burger span,.hd.open .burger span{background:var(--ink)}
+.hd.open .burger span:nth-child(1){transform:translateY(9px) rotate(45deg)}
+.hd.open .burger span:nth-child(2){opacity:0}
+.hd.open .burger span:nth-child(3){transform:translateY(-9px) rotate(-45deg)}
+.mnav{display:none}
+@media(max-width:900px){
+  .hd nav{display:none}
+  .burger{display:flex}
+  .hd .wrap{height:64px}
+  .brand{font-size:19px}
+  .mnav{display:flex;position:fixed;inset:0;z-index:49;background:var(--bg);flex-direction:column;align-items:center;justify-content:center;gap:26px;opacity:0;visibility:hidden;transition:opacity .3s var(--ease),visibility .3s}
+  .mnav.open{opacity:1;visibility:visible}
+  .mnav a{font-size:16px;letter-spacing:.12em;color:var(--ink);text-decoration:none}
+  .mnav .btn{margin-top:8px;min-width:200px}
+  .hd.open{background:var(--bg)}
+  .hd.open .brand{color:var(--ink)}
+  body.menu-open{overflow:hidden}
+}
+
+/* ---------- hero ---------- */
+.hero{position:relative;height:100vh;height:100svh;min-height:600px;display:flex;align-items:center;justify-content:center;text-align:center;color:#faf8f5;overflow:hidden}
+.hero .bg{position:absolute;inset:0}
+.hero .bg img{width:100%;height:100%;object-fit:cover;object-position:50% 40%;transform:scale(1.04);animation:heroZoom 14s var(--ease) forwards}
+@keyframes heroZoom{to{transform:scale(1)}}
+@media(max-width:680px){.hero .in{width:100%;padding:0 16px !important}.hero .cta{flex-direction:column;align-items:stretch;gap:16px !important;margin-top:48px !important}.hero .cta .btn{width:100%;padding:10px 24px}}
+.hero .bg::after{content:"";position:absolute;inset:0;background:rgba(28,24,20,.22)}
+@media(max-width:680px){.hero .bg::after{background:rgba(28,24,20,.34)}}
+@media (prefers-reduced-motion:reduce){.hero .bg img{animation:none;transform:none}}
+.hero .in{position:relative;z-index:2;padding:0 24px}
+.hero .wm{font-family:var(--serif);font-weight:600;font-size:clamp(26px,3.4vw,36px);letter-spacing:.04em;opacity:.95}
+.hero .gl{width:60px;height:1px;background:var(--gold);margin:22px auto 30px;opacity:.85}
+.hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(30px,4.6vw,48px);letter-spacing:.15em;line-height:1.6}
+.hero .sub{margin-top:26px;font-size:clamp(13.5px,1.4vw,15px);letter-spacing:.08em;line-height:2;color:rgba(250,248,245,.82)}
+.hero .cta{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:40px}
+.hero .tag{position:absolute;left:auto;bottom:auto;right:16px;top:84px;z-index:2;font-size:10px;letter-spacing:.06em;background:rgba(0,0,0,.4);padding:3px 9px;color:#fff}
+.scroll{position:absolute;left:50%;bottom:28px;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:10px;font-size:11px;letter-spacing:.3em;color:rgba(250,248,245,.6)}
+.scroll::after{content:"";width:1px;height:40px;background:linear-gradient(rgba(250,248,245,.7),rgba(250,248,245,0));animation:sline 2.2s ease-in-out infinite}
+@keyframes sline{0%{transform:scaleY(0);transform-origin:top}45%{transform:scaleY(1);transform-origin:top}55%{transform:scaleY(1);transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+@media (prefers-reduced-motion:reduce){.scroll::after{animation:none}}
+
+/* ---------- sections ---------- */
+.sec{position:relative;padding-block:clamp(84px,11vw,128px)}
+.sec.alt{background:var(--bg2)}
+.wave{position:absolute;left:0;right:0;height:56px;line-height:0;pointer-events:none}
+.wave svg{width:100%;height:100%;display:block}
+.wave.top{top:-55px}
+.wave.top path{fill:var(--bg2)}
+.wave.btm{bottom:-55px;z-index:1}
+.wave.btm path{fill:var(--bg2)}
+.sh{text-align:center;margin-bottom:clamp(44px,6vw,64px)}
+.eb{font-size:12px;letter-spacing:6px;color:var(--accent);line-height:16px}
+.sh h2{font-family:var(--serif);font-size:clamp(25px,3vw,30px);letter-spacing:.08em;line-height:1.6;margin-top:14px;text-wrap:balance}
+.sh .lead{font-size:13px;letter-spacing:.06em;color:var(--ink2);margin-top:8px}
+.textlink{display:inline-flex;align-items:center;gap:6px;font-size:13px;letter-spacing:.08em;color:var(--accent);text-decoration:none;padding-bottom:2px;border-bottom:1px solid transparent;transition:border-color .25s}
+.textlink:hover{border-bottom-color:var(--accent)}
+.center{text-align:center}
+
+/* concept */
+.concept{text-align:center}
+.mark{width:44px;height:44px;margin:22px auto 0;color:var(--gold)}
+.concept h2{font-family:var(--serif);font-size:clamp(26px,3.6vw,36px);letter-spacing:.12em;line-height:1.8;margin-top:28px}
+.concept .gl{width:40px;height:1px;background:var(--gold);margin:30px auto;opacity:.7}
+.concept p.body{font-size:14.5px;line-height:2.1;letter-spacing:.06em;color:var(--ink2);max-width:36em;margin:0 auto}
+
+/* why */
+.why{max-width:896px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,4vw,48px);text-align:center}
+.why .big{font-family:var(--serif);font-size:36px;letter-spacing:.06em;color:var(--accent);line-height:1.4}
+.why .lab{font-size:11.5px;letter-spacing:.12em;color:var(--accent);margin-top:4px}
+.why .d{font-size:13.5px;line-height:1.9;color:var(--ink2);margin-top:16px}
+@media(max-width:720px){.why{grid-template-columns:1fr;gap:40px}}
+
+/* promise */
+.cards3{max-width:896px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,2vw,24px)}
+@media(max-width:820px){.cards3{grid-template-columns:1fr;max-width:420px;margin:0 auto}}
+.pc{background:var(--card);border-top:2px solid rgba(70,106,134,.35);padding:36px 30px 34px;box-shadow:0 1px 2px rgba(44,44,44,.04)}
+.pc .kn{font-family:var(--serif);font-size:40px;color:var(--accent);text-align:center;line-height:1}
+.pc .kl{width:28px;height:1px;background:var(--gold);margin:16px auto 0;opacity:.7}
+.pc h3{font-family:var(--serif);font-size:17px;letter-spacing:.08em;text-align:center;margin-top:20px}
+.pc .d{font-size:13px;line-height:1.95;color:var(--ink2);text-align:center;margin-top:14px}
+.pc ul{list-style:none;margin:22px 0 0;padding:20px 0 0;border-top:1px solid var(--line-s);display:grid;gap:10px}
+.pc li{display:grid;grid-template-columns:16px 1fr;gap:8px;font-size:13px;line-height:1.7;color:var(--ink)}
+.pc li svg{width:14px;height:14px;color:var(--accent);margin-top:4px}
+
+/* services */
+.svc{display:grid;grid-template-columns:1fr 1fr;gap:clamp(16px,2.4vw,28px);max-width:896px;margin:0 auto}
+@media(max-width:720px){.svc{grid-template-columns:1fr}}
+.sv{background:var(--bg2);overflow:hidden;display:flex;flex-direction:column}
+.sv .im{aspect-ratio:4/3;overflow:hidden;position:relative}
+.sv .im img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
+.sv:hover .im img{transform:scale(1.04)}
+.tag{position:absolute;left:10px;bottom:10px;font-size:10px;letter-spacing:.06em;background:rgba(0,0,0,.42);color:#fff;padding:3px 9px}
+.sv .bd{padding:30px 28px 32px;text-align:center}
+.sv h3{font-family:var(--serif);font-size:20px;letter-spacing:.14em}
+.sv .en{font-size:10.5px;letter-spacing:.4em;color:var(--ink3);margin-top:6px}
+.sv .d{font-size:13.5px;line-height:1.95;color:var(--ink2);margin-top:18px}
+.sv .textlink{margin-top:20px}
+
+/* menu */
+.mgrid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,6vw,72px);max-width:896px;margin:0 auto}
+@media(max-width:760px){.mgrid{grid-template-columns:1fr;gap:40px}}
+.mc h3{font-family:var(--serif);font-size:19px;letter-spacing:.1em;display:flex;align-items:baseline;gap:12px;padding-bottom:12px;border-bottom:1px solid var(--ink)}
+.mc h3 small{font-family:var(--sans);font-size:10.5px;letter-spacing:.3em;color:var(--accent)}
+.mc .d{font-size:12.5px;color:var(--ink2);line-height:1.8;margin-top:12px}
+.mc ul{list-style:none;margin:8px 0 0;padding:0}
+.mc li{display:flex;align-items:baseline;gap:12px;padding:12px 0;border-bottom:1px solid var(--line-s);font-size:14px}
+.mc li .n small{display:block;font-size:11.5px;color:var(--ink2);margin-top:2px}
+.mc li .dot{flex:1;border-bottom:1px dotted var(--ink3);transform:translateY(-4px);min-width:16px}
+.mc li .p{font-family:var(--serif);font-size:15px;white-space:nowrap;font-variant-numeric:tabular-nums}
+.mnote{text-align:center;font-size:12px;color:var(--ink2);line-height:1.9;margin-top:40px}
+
+/* first visit band */
+.band{position:relative;background:var(--bg2);padding-block:clamp(90px,11vw,120px);margin-block:56px;text-align:center;
+  background-image:repeating-linear-gradient(45deg,rgba(70,106,134,.035) 0 1px,transparent 1px 22px),repeating-linear-gradient(-45deg,rgba(70,106,134,.035) 0 1px,transparent 1px 22px)}
+.band h2{font-family:var(--serif);font-size:clamp(22px,2.8vw,26px);letter-spacing:.1em;margin-top:14px}
+.band p{font-size:13.5px;color:var(--ink2);margin-top:14px;line-height:1.9}
+.band .hl{font-size:14px;color:var(--ink);margin-top:18px}
+.band .hl b{color:var(--accent);font-weight:500}
+.band .tel{font-family:var(--serif);font-size:20px;letter-spacing:.08em;color:var(--ink);margin-top:10px}
+.band .tel .samp{font-family:var(--sans);font-size:11.5px;margin-left:8px}
+.band .textlink{margin-top:14px}
+.band .eb{color:var(--accent)}
+
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(8px,1.2vw,14px)}
+@media(max-width:640px){.gal{grid-template-columns:repeat(2,1fr)}}
+.gal figure{margin:0;aspect-ratio:1;overflow:hidden;position:relative}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .8s var(--ease)}
+.gal figure:hover img{transform:scale(1.05)}
+
+/* info (news) */
+.info{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,2vw,20px);max-width:896px;margin:0 auto}
+@media(max-width:820px){.info{grid-template-columns:1fr;max-width:480px}}
+.ic{background:var(--card);border-top:2px solid rgba(70,106,134,.35);padding:26px 24px 24px;display:flex;flex-direction:column}
+.ic .k{font-size:11px;letter-spacing:.3em;color:var(--accent)}
+.ic h3{font-family:var(--serif);font-size:17px;letter-spacing:.08em;margin-top:6px}
+.ic ul{list-style:none;margin:22px 0 0;padding:0;display:grid;gap:18px;flex:1}
+.ic li .meta{display:flex;align-items:center;gap:8px;font-size:11.5px;color:var(--ink2);font-variant-numeric:tabular-nums}
+.ic li .meta span{font-size:10.5px;background:var(--bg2);color:var(--ink);padding:1px 7px;border-radius:2px}
+.ic li .t{font-size:13.5px;line-height:1.7;margin-top:6px}
+.ic .textlink{margin-top:24px;align-self:flex-start}
+
+.news{max-width:896px;margin:0 auto;border-top:1px solid var(--line)}
+.news .r{display:grid;grid-template-columns:120px 110px 1fr;gap:18px;align-items:baseline;padding:20px 8px;border-bottom:1px solid var(--line)}
+.news .dt{font-family:var(--serif);font-size:15px;letter-spacing:.06em;color:var(--ink2);font-variant-numeric:tabular-nums}
+.news .cat{justify-self:start;font-size:10.5px;letter-spacing:.16em;color:var(--accent);border:1px solid var(--accent);padding:2px 9px;line-height:1.5}
+.news .tt{font-size:14.5px;line-height:1.8}
+@media(max-width:620px){.news .r{grid-template-columns:auto auto;justify-content:start;gap:6px 14px;padding:16px 4px}.news .tt{grid-column:1/-1}}
+
+/* access */
+.acc{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,56px);align-items:start;max-width:896px;margin:0 auto}
+@media(max-width:760px){.acc{grid-template-columns:1fr}}
+.map{position:relative;aspect-ratio:1;background:#ebe6dc;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:var(--ink2);
+  background-image:repeating-linear-gradient(0deg,transparent 0 39px,rgba(44,44,44,.06) 39px 40px),repeating-linear-gradient(90deg,transparent 0 39px,rgba(44,44,44,.06) 39px 40px)}
+.map svg{width:30px;height:30px;color:var(--accent)}
+@media(max-width:760px){.map{aspect-ratio:16/9}}
+.map .t{font-size:14px;letter-spacing:.1em;color:var(--ink)}
+.map .s{font-size:11px}
+.dl{display:grid;gap:22px}
+.dl .k{font-size:11.5px;letter-spacing:.2em;color:var(--accent)}
+.dl .v{font-size:14px;line-height:1.85;margin-top:4px}
+
+/* reservation band */
+.rsv{position:relative;background:var(--bg2);color:var(--ink);text-align:center;padding-block:clamp(84px,10vw,110px);margin-top:56px}
+.rsv .eb{color:var(--accent)}
+.rsv h2{font-family:var(--serif);font-size:clamp(24px,3vw,30px);letter-spacing:.1em;margin-top:14px}
+.rsv .gl{width:40px;height:1px;background:var(--gold);margin:22px auto;opacity:.8}
+.rsv p{font-size:13.5px;line-height:2;color:var(--ink2)}
+.rsv .cta{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:32px}
+.btn.line{background:linear-gradient(rgba(44,40,36,.22),rgba(44,40,36,.22)),var(--line-green);color:#fff}
+.btn.line:hover{background:linear-gradient(rgba(44,40,36,.12),rgba(44,40,36,.12)),var(--line-green)}
+.btn.ig{background:linear-gradient(rgba(44,40,36,.22),rgba(44,40,36,.22)),linear-gradient(45deg,#feda75 0%,#fa7e1e 25%,#d62976 50%,#962fbf 75%,#4f5bd5 100%);color:#fff;border:0}
+.btn.ig:hover{background:linear-gradient(rgba(44,40,36,.12),rgba(44,40,36,.12)),linear-gradient(45deg,#feda75 0%,#fa7e1e 25%,#d62976 50%,#962fbf 75%,#4f5bd5 100%)}
+.rsv .note{font-size:11.5px;color:var(--ink3);margin-top:18px;line-height:1.8}
+
+/* footer */
+footer{background:var(--dark);color:#d9d4cc;padding-block:64px 36px;text-align:center}
+footer .fb{font-family:var(--serif);font-weight:600;font-size:26px;letter-spacing:.04em;color:#faf8f5}
+footer .tl{font-size:11.5px;letter-spacing:.3em;color:#a39d94;margin-top:12px}
+.fgrid{display:grid;grid-template-columns:1fr 1fr;gap:32px;max-width:720px;margin:44px auto 0;text-align:left}
+@media(max-width:640px){.fgrid{grid-template-columns:1fr;text-align:center}}
+.fgrid .k{font-size:11px;letter-spacing:.3em;color:var(--gold)}
+.fgrid .v{font-size:13px;line-height:2;margin-top:10px;color:#cfc9c0}
+.fgrid nav{display:grid;gap:6px;margin-top:10px}
+.fgrid{grid-template-columns:auto auto;justify-content:center;gap:32px 96px}
+@media(max-width:640px){.fgrid{grid-template-columns:auto auto;gap:24px 40px;text-align:left}}
+.fgrid nav a{font-size:13px;color:#cfc9c0;text-decoration:none}
+.fgrid nav a:hover{color:var(--gold)}
+.fsns{display:flex;justify-content:center;gap:18px;margin-top:40px}
+.fsns a{width:22px;height:22px;color:#cfc9c0;display:inline-flex}
+.fsns a:hover{color:var(--gold)}
+.fsns svg{width:100%;height:100%}
+footer .copy{font-size:11px;letter-spacing:.14em;color:#8a847b;margin-top:30px}
+.banner{background:var(--dark);color:#a39d94;font-size:11.5px;line-height:1.8;text-align:center;padding:14px 16px 20px;border-top:1px solid rgba(255,255,255,.08)}
+.banner b{color:#faf8f5;font-weight:500}
+
+/* reveal */
+</style>
+</head>
+<body>
+
+<header class="hd" id="hd"><div class="wrap">
+  <a class="brand" href="#top">cotton.</a>
+  <nav aria-label="メインメニュー">
+    <a href="#concept">cotton.について</a>
+    <a href="#service">トリミング</a>
+    <a href="#menu">料金</a>
+    <a href="#gallery">仕上がり</a>
+    <a href="#access">アクセス</a>
+  </nav>
+  <!-- ヘッダーSNS：本番でお店のURLに。持っていないSNSは<a>ごと削除 -->
+  <div class="hsns">
+    <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="公式Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.3"/><circle cx="17.4" cy="6.6" r=".9" fill="currentColor" stroke="none"/></svg></a>
+    <a href="https://line.me/" target="_blank" rel="noopener" aria-label="公式LINE"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"><path d="M12 3.6c-5 0-9.1 3.2-9.1 7.2 0 3.5 3.2 6.5 7.6 7.1.3.1.7.2.8.5.1.2.1.6 0 .8l-.1.8c0 .2-.2.9.8.5 1-.4 5.5-3.2 7.5-5.5 1.4-1.5 2-3 2-4.3 0-4-4.1-7.1-9.5-7.1z"/><text x="12" y="12.6" text-anchor="middle" font-family="Arial,sans-serif" font-size="4.7" font-weight="500" fill="currentColor" stroke="none">LINE</text></svg></a>
+  </div>
+  <a class="btn gold sm hbtn" href="#reserve">ご予約</a>
+  <button class="burger" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="mnav"><span></span><span></span><span></span></button>
+</div></header>
+<div class="mnav" id="mnav" aria-hidden="true">
+  <a href="#concept">cotton.について</a>
+  <a href="#service">トリミング</a>
+  <a href="#menu">料金</a>
+  <a href="#gallery">仕上がり</a>
+  <a href="#access">アクセス</a>
+  <!-- スマホメニュー内SNS：持っていないSNSは<a>ごと削除 -->
+  <div class="msns">
+    <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="公式Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.3"/><circle cx="17.4" cy="6.6" r=".9" fill="currentColor" stroke="none"/></svg></a>
+    <a href="https://line.me/" target="_blank" rel="noopener" aria-label="公式LINE"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"><path d="M12 3.6c-5 0-9.1 3.2-9.1 7.2 0 3.5 3.2 6.5 7.6 7.1.3.1.7.2.8.5.1.2.1.6 0 .8l-.1.8c0 .2-.2.9.8.5 1-.4 5.5-3.2 7.5-5.5 1.4-1.5 2-3 2-4.3 0-4-4.1-7.1-9.5-7.1z"/><text x="12" y="12.6" text-anchor="middle" font-family="Arial,sans-serif" font-size="4.7" font-weight="500" fill="currentColor" stroke="none">LINE</text></svg></a>
+  </div>
+  <a class="btn gold" href="#reserve">ご予約</a>
+</div>
+
+<section class="hero" id="top">
+  <div class="bg"><img src="assets/ms/hero.jpg" alt="くつろぐわんちゃん（イメージ）"></div>
+  <div class="in">
+    <div class="wm">Dog Salon &amp; Hotel cotton.</div>
+    <div class="gl"></div>
+    <h1>ふんわり可愛く、丁寧に</h1>
+    <p class="sub">宮崎県都城市の<br>ドッグサロン＆ペットホテル</p>
+    <div class="cta">
+      <a class="btn gold" href="#reserve">予約する</a>
+      <a class="btn ghost" href="#menu">料金を見る</a>
+    </div>
+  </div>
+  <span class="tag">※サンプル画像</span>
+  <div class="scroll">SCROLL</div>
+</section>
+
+<main>
+
+  <!-- concept -->
+  <section class="sec alt concept" id="concept">
+    <div class="wave top" aria-hidden="true"><svg viewBox="0 0 1440 56" preserveAspectRatio="none"><path d="M0,40 C240,8 480,8 720,28 C960,48 1200,52 1440,24 L1440,56 L0,56 Z"/></svg></div>
+    <div class="wrap sm rv">
+      <p class="eb">CONCEPT</p>
+      <svg class="mark" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1"><circle cx="24" cy="24" r="22" opacity=".5"/><circle cx="24" cy="24" r="15" opacity=".35"/><path d="M24 33c0-6 0-12 0-18M24 22c-3-1-5-3-6-6M24 26c3-1 5-3 6-6" stroke-linecap="round" opacity=".8"/></svg>
+      <h2>わんちゃんが安心して<br>過ごせる空間を。</h2>
+      <div class="gl"></div>
+      <p class="body">ドッグサロン＆ホテル cotton.は、宮崎県都城市のドッグサロンです。<br>ふんわり可愛く、丁寧に。<br>わんちゃんが安心して過ごせる、空間づくりを大切にしています。</p>
+    </div>
+    <div class="wave btm" aria-hidden="true"><svg viewBox="0 0 1440 56" preserveAspectRatio="none"><path d="M0,16 C260,44 520,52 760,32 C1000,12 1220,6 1440,24 L1440,0 L0,0 Z"/></svg></div>
+  </section>
+
+  <!-- services：お店がお預かり・ホテルもやっている場合だけ残す。トリミングだけの店はこのsectionごと削除（料金表のHotel欄・Q&A・アクセスのサービス行も合わせて） -->
+  <section class="sec" id="service">
+    <div class="wrap rv">
+      <div class="sh"><p class="eb">SERVICES</p><h2>ふたつのおもてなし</h2><p class="lead">トリミングと、ペットホテル</p></div>
+      <div class="svc">
+        <div class="sv"><div class="im"><img src="assets/ms/trim.jpg" alt="トリミング台のわんちゃん（イメージ）" loading="lazy"><span class="tag">※サンプル</span></div>
+          <div class="bd"><h3>トリミング</h3><p class="en">TRIMMING</p><p class="d">カット・シャンプーで、<br>ふんわり可愛く、丁寧に。</p><a class="textlink" href="#menu">コース・料金を見る →</a></div></div>
+        <div class="sv"><div class="im"><img src="assets/ms/hotel.jpg" alt="くつろぐわんちゃん（イメージ）" loading="lazy"><span class="tag">※サンプル</span></div>
+          <div class="bd"><h3>ペットホテル</h3><p class="en">PET HOTEL</p><p class="d">お出かけのときも、安心して。<br>ホテル中の様子はInstagramでもお届けします。</p><a class="textlink" href="#reserve">相談する →</a></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- menu -->
+  <section class="sec" id="menu" style="padding-top:0">
+    <div class="wrap rv">
+      <div class="sh"><p class="eb">PRICE</p><h2>コース・料金</h2><p class="lead">※ 下記はサンプルの料金です。実際の内容に差し替えます。</p></div>
+      <div class="mgrid">
+        <div class="mc"><h3>トリミング<small>TRIMMING</small></h3><p class="d">カット＋シャンプーのコースです。犬種・毛量によって変わります。</p>
+          <ul><li><span class="n">小型犬<small>トイプードル・チワワ など</small></span><span class="dot"></span><span class="p">¥5,500〜</span></li><li><span class="n">中型犬<small>柴犬・コーギー など</small></span><span class="dot"></span><span class="p">¥7,500〜</span></li></ul></div>
+        <div class="mc"><h3>シャンプー<small>SHAMPOO</small></h3><p class="d">カットなしで、きれいにさっぱり。</p>
+          <ul><li><span class="n">小型犬</span><span class="dot"></span><span class="p">¥3,500〜</span></li><li><span class="n">中型犬</span><span class="dot"></span><span class="p">¥5,000〜</span></li></ul></div>
+        <div class="mc"><h3>オプション<small>OPTION</small></h3>
+          <ul><li><span class="n">爪切り</span><span class="dot"></span><span class="p">¥550</span></li><li><span class="n">耳そうじ</span><span class="dot"></span><span class="p">¥550</span></li><li><span class="n">肛門腺しぼり</span><span class="dot"></span><span class="p">¥550</span></li><li><span class="n">歯みがき</span><span class="dot"></span><span class="p">¥550</span></li></ul></div>
+        <div class="mc"><h3>ペットホテル<small>PET HOTEL</small></h3>
+          <ul><li><span class="n">お預かり</span><span class="dot"></span><span class="p">応相談</span></li><li><span class="n">ホテル（1泊）</span><span class="dot"></span><span class="p">応相談</span></li></ul></div>
+      </div>
+      <p class="mnote">※ 表示価格はサンプルです（税込表記の例）。お支払い方法・ワクチン証明の要否・キャンセル規定などは、お店の実際のルールで記載します。</p>
+    </div>
+  </section>
+
+  <!-- first visit -->
+  <section class="band" id="first">
+    <div class="wave top" aria-hidden="true"><svg viewBox="0 0 1440 56" preserveAspectRatio="none"><path d="M0,40 C240,8 480,8 720,28 C960,48 1200,52 1440,24 L1440,56 L0,56 Z"/></svg></div>
+    <div class="wrap rv">
+      <p class="eb">FIRST VISIT</p>
+      <h2>初めてでも、安心してお任せください</h2>
+      <p>わんちゃんの性格や体調、ご希望のスタイルをうかがってから始めます。</p>
+      <!-- 予約方法：お店が実際に使っているものだけ残す（電話番号は本番で記載） -->
+      <p class="hl">ご予約は <b>LINE</b> から受け付けています</p>
+      <a class="textlink" href="#reserve">ご予約方法を見る →</a>
+    </div>
+    <div class="wave btm" aria-hidden="true"><svg viewBox="0 0 1440 56" preserveAspectRatio="none"><path d="M0,16 C260,44 520,52 760,32 C1000,12 1220,6 1440,24 L1440,0 L0,0 Z"/></svg></div>
+  </section>
+
+  <!-- gallery -->
+  <section class="sec" id="gallery">
+    <div class="wrap rv">
+      <div class="sh"><p class="eb">GALLERY</p><h2>仕上がり帖</h2><p class="lead">日々の仕上がりをご紹介します</p></div>
+      <div class="gal">
+        <figure><img src="assets/ms/g-aroha.jpg" alt="仕上がり（イメージ）" loading="lazy"><span class="tag">※サンプル</span></figure>
+        <figure><img src="assets/ms/g-cotton.jpg" alt="仕上がり（イメージ）" loading="lazy"><span class="tag">※サンプル</span></figure>
+        <figure><img src="assets/ms/g-dogbell.jpg" alt="仕上がり（イメージ）" loading="lazy"><span class="tag">※サンプル</span></figure>
+        <figure><img src="assets/ms/g-icca.jpg" alt="仕上がり（イメージ）" loading="lazy"><span class="tag">※サンプル</span></figure>
+        <figure><img src="assets/ms/g-momo.jpg" alt="仕上がり（イメージ）" loading="lazy"><span class="tag">※サンプル</span></figure>
+        <figure><img src="assets/ms/g-nicotto.jpg" alt="仕上がり（イメージ）" loading="lazy"><span class="tag">※サンプル</span></figure>
+      </div>
+      <p class="center" style="margin-top:36px"><a class="textlink" href="https://www.instagram.com/" target="_blank" rel="noopener">Instagramでもっと見る →</a></p>
+    </div>
+  </section>
+
+  <!-- information -->
+  <section class="sec alt" id="info">
+    <div class="wave top" aria-hidden="true"><svg viewBox="0 0 1440 56" preserveAspectRatio="none"><path d="M0,30 C200,52 460,54 700,34 C940,14 1180,4 1440,26 L1440,56 L0,56 Z"/></svg></div>
+    <div class="wrap rv">
+      <div class="sh"><p class="eb">INFORMATION</p><h2>お知らせ</h2><p class="lead">営業日・イベント・季節のお手入れ情報など</p></div>
+      <div class="news">
+        <div class="r"><div class="dt">2026.--.--</div><div class="cat">CAMPAIGN</div><div class="tt ph">※ 初回限定・季節のキャンペーン情報が入ります</div></div>
+        <div class="r"><div class="dt">2026.--.--</div><div class="cat">NEWS</div><div class="tt ph">※ 営業日の変更・新メニューなどのお知らせが入ります</div></div>
+        <div class="r"><div class="dt">2026.--.--</div><div class="cat">EVENT</div><div class="tt ph">※ 季節のイベントなど（Instagramと連動も可）</div></div>
+        <div class="r"><div class="dt">2026.--.--</div><div class="cat">CARE</div><div class="tt ph">※ おうちでできるお手入れのコツなど</div></div>
+      </div>
+      <p class="center" style="margin-top:28px"><a class="textlink" href="#info">お知らせ一覧へ →</a></p>
+      <p class="mnote">※ 更新しやすいように、お店側で追加・編集できる形でお作りします。</p>
+    </div>
+    <div class="wave btm" aria-hidden="true"><svg viewBox="0 0 1440 56" preserveAspectRatio="none"><path d="M0,16 C260,44 520,52 760,32 C1000,12 1220,6 1440,24 L1440,0 L0,0 Z"/></svg></div>
+  </section>
+
+  <!-- access -->
+  <section class="sec" id="access">
+    <div class="wrap rv">
+      <div class="sh"><p class="eb">ACCESS</p><h2>店舗のご案内</h2><p class="lead">宮崎県都城市・祝吉</p></div>
+      <div class="acc">
+        <div class="map"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M12 21s-6.5-6.2-6.5-11a6.5 6.5 0 0113 0c0 4.8-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg><span class="t">Google マップ</span><span class="s">※ お店の地図が入ります</span></div>
+        <div class="dl">
+          <div><p class="k">店名</p><p class="v">ドッグサロン&amp;HOTEL cotton.</p></div>
+          <div><p class="k">住所</p><p class="v">宮崎県都城市祝吉 <span class="samp">※ 番地は本番で記載</span></p></div>
+          <div><p class="k">営業時間</p><p class="v ph">※ 本番で記載</p></div>
+          <div><p class="k">定休日</p><p class="v ph">※ 本番で記載</p></div>
+          <div><p class="k">ご予約</p><p class="v">LINE</p></div>
+          <div><p class="k">サービス</p><p class="v">トリミング・ペットホテル</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- reservation -->
+  <section class="rsv" id="reserve">
+    <div class="wave top" aria-hidden="true"><svg viewBox="0 0 1440 56" preserveAspectRatio="none"><path d="M0,30 C200,52 460,54 700,34 C940,14 1180,4 1440,26 L1440,56 L0,56 Z"/></svg></div>
+    <div class="wrap rv">
+      <p class="eb">RESERVATION</p>
+      <h2>ご予約・お問い合わせ</h2>
+      <div class="gl"></div>
+      <p>ご予約はLINEから承っております。<br>ペットホテルのご相談も、お気軽にどうぞ。</p>
+      <!-- 予約ボタン：お店が実際に使っているものだけ残す（確認できないものは<a>ごと削除）。上の文章とアクセスの「ご予約」行も合わせる -->
+      <div class="cta">
+        <!-- LINE予約：本番でお店のLINE公式アカウントURLに -->
+        <a class="btn line" href="https://line.me/" target="_blank" rel="noopener" data-demo>LINEで予約</a>
+      </div>
+      <p class="note" id="qnote">※ リンク先・番号はご契約時にお店のものに設定します。</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fb">cotton.</div>
+    <p class="tl">ふんわり可愛く、丁寧に</p>
+    <div class="fgrid">
+      <div><p class="k">SHOP INFO</p><p class="v">宮崎県都城市祝吉<br>営業時間：<span class="ph">※ 本番で記載</span><br>ご予約：LINE</p></div>
+      <div><p class="k">MENU</p><nav><a href="#concept">cotton.について</a><a href="#service">トリミング・ペットホテル</a><a href="#menu">コース・料金</a><a href="#gallery">仕上がり帖</a><a href="#access">店舗のご案内</a></nav></div>
+    </div>
+    <!-- SNS：本番でお店のURLに差し替え。持っていないSNSは<a>ごと削除 -->
+    <div class="fsns">
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="公式Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.3"/><circle cx="17.4" cy="6.6" r=".9" fill="currentColor" stroke="none"/></svg></a>
+      <a href="https://line.me/" target="_blank" rel="noopener" aria-label="公式LINE"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"><path d="M12 3.6c-5 0-9.1 3.2-9.1 7.2 0 3.5 3.2 6.5 7.6 7.1.3.1.7.2.8.5.1.2.1.6 0 .8l-.1.8c0 .2-.2.9.8.5 1-.4 5.5-3.2 7.5-5.5 1.4-1.5 2-3 2-4.3 0-4-4.1-7.1-9.5-7.1z"/><text x="12" y="12.6" text-anchor="middle" font-family="Arial,sans-serif" font-size="4.7" font-weight="500" fill="currentColor" stroke="none">LINE</text></svg></a>
+    </div>
+    <p class="copy">© cotton. — Sample</p>
+  </div>
+</footer>
+<div class="banner">これはご提案用の<b>サンプル</b>です。写真はイメージ（AI生成）で、実際のお店の写真・文章・料金・連絡先に差し替えられます。</div>
+
+<script>
+(function(){
+  document.documentElement.classList.add('js');
+  var hd=document.getElementById('hd'), bg=hd.querySelector('.burger'), mn=document.getElementById('mnav');
+  function y(){ return Math.max(window.scrollY||0,(document.scrollingElement||{}).scrollTop||0,document.body.scrollTop||0); }
+  function onScroll(){ hd.classList.toggle('scrolled', y()>40); }
+  window.addEventListener('scroll',onScroll,{passive:true}); document.addEventListener('scroll',onScroll,{passive:true,capture:true}); onScroll();
+  function setMenu(o){ hd.classList.toggle('open',o); mn.classList.toggle('open',o); document.body.classList.toggle('menu-open',o); bg.setAttribute('aria-expanded',o); bg.setAttribute('aria-label',o?'メニューを閉じる':'メニューを開く'); mn.setAttribute('aria-hidden',!o); }
+  bg.addEventListener('click',function(){ setMenu(!mn.classList.contains('open')); });
+  [].forEach.call(mn.querySelectorAll('a'),function(a){ a.addEventListener('click',function(){ setMenu(false); }); });
+  [].forEach.call(document.querySelectorAll('[data-demo]'),function(a){ a.addEventListener('click',function(e){ e.preventDefault(); var q=document.getElementById('qnote'); if(q){ q.textContent='（デモ）本番ではお店のLINEに繋がります。'; } }); });
+})();
+</script>
+</body>
+</html>
